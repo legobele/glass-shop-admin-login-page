@@ -547,7 +547,7 @@
                     localStorage.setItem('qgi-user', JSON.stringify(data.user));
                     
                     // Redirect to admin dashboard
-                    window.location.href = 'QGI-ADMIN-DASHBOARD-v0.6.html';
+                    window.location.href = 'https://legobele.github.io/glass-shop-admin-tool';
                 } else {
                     showAlert('alert-container', data.message || 'Login failed', 'error');
                 }
@@ -596,7 +596,7 @@
                     localStorage.setItem('qgi-user', JSON.stringify(data.user));
                     
                     // Redirect to admin dashboard
-                    window.location.href = 'QGI-ADMIN-DASHBOARD-v0.6.html';
+                    window.location.href = 'https://legobele.github.io/glass-shop-admin-tool';
                 } else {
                     showAlert('pin-alert-container', data.message || 'PIN login failed', 'error');
                     clearPin();
@@ -700,7 +700,7 @@
                     
                     if (response.ok) {
                         // Already logged in, redirect
-                        window.location.href = 'QGI-ADMIN-DASHBOARD-v0.6.html';
+                        window.location.href = 'https://legobele.github.io/glass-shop-admin-tool';
                     } else {
                         // Token invalid, clear it
                         localStorage.removeItem('qgi-auth-token');
