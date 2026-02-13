@@ -316,7 +316,7 @@
     <div class="login-container">
         <div class="login-header">
             <h1 class="logo">Quality Glass</h1>
-            <p class="subtitle">Admin Dashboard</div>
+            <p class="subtitle">Admin Dashboard</p>
         </div>
 
         <!-- EMAIL/PASSWORD LOGIN VIEW -->
@@ -872,14 +872,15 @@
                 }
             });
 
-            ('apply-accessibility').onclick = function() {
+            document.getElementById('apply-accessibility').onclick = function() {
                 accessibilitySettings.highContrast = document.getElementById('high-contrast-toggle').checked;
                 accessibilitySettings.reducedMotion = document.getElementById('reduced-motion-toggle').checked;
                 accessibilitySettings.focusIndicators = document.getElementById('focus-indicators-toggle').checked;
                 accessibilitySettings.colorTone = document.getElementById('color-tone-select').value;
                 accessibilitySettings.fontSize = document.getElementById('font-size-select').value;
                 
-                applyAccessibilitySettings();menu.remove();
+                applyAccessibilitySettings();
+                menu.remove();
                 
                 // announce to screen readers
                 const announcement = document.createElement('div');
